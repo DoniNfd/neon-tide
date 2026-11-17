@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neon Tide — Solenne City</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #0b0e14; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #game {
+    display: block; background: #10131a;
+    width: min(100vw, 177.78vh); height: min(56.25vw, 100vh);
+  }
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="720" aria-label="Neon Tide: an open-world crime game in Solenne City. WASD to move, E to enter cars, mouse to aim, click to shoot."></canvas>
+<p id="status" role="status" aria-live="polite">Neon Tide — Solenne City</p>
+<script src="./src/util.js"></script>
+<script src="./src/world.js"></script>
+<script src="./src/audio.js"></script>
+<script src="./src/game.js"></script>
+<script src="./src/render.js"></script>
+<script src="./src/main.js"></script>
+</body>
+</html>
